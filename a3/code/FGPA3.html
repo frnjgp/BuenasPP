@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module FGPA3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>FGPA3</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cfranciscojosegalvezp%5Cdocuments%5Cactividades%5Cbuenaspp%5Ca3%5Ccode%5Cfgpa3.py">c:\users\franciscojosegalvezp\documents\actividades\buenaspp\a3\code\fgpa3.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top><a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="FGPA3.html#finances">finances</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="finances">class <strong>finances</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Clase&nbsp;basada&nbsp;en&nbsp;la&nbsp;actividad&nbsp;1&nbsp;de&nbsp;Buenas&nbsp;Prácticas&nbsp;de&nbsp;Programación.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="finances-calculos"><strong>calculos</strong></a>(df)</dt><dd><tt>Devuelve&nbsp;otro&nbsp;dataframe&nbsp;con&nbsp;los&nbsp;cálculos&nbsp;pedidos&nbsp;en&nbsp;el&nbsp;ejercicio.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;df&nbsp;(dataframe):&nbsp;dataframe&nbsp;con&nbsp;los&nbsp;datos&nbsp;de&nbsp;entrada.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;df&nbsp;(DataFrame):&nbsp;dataframe&nbsp;con&nbsp;los&nbsp;datos&nbsp;de&nbsp;salida.</tt></dd></dl>
+
+<dl><dt><a name="finances-check_empty"><strong>check_empty</strong></a>(df)</dt><dd><tt>Comprueba&nbsp;que&nbsp;las&nbsp;columnas&nbsp;de&nbsp;los&nbsp;meses&nbsp;del&nbsp;año&nbsp;son&nbsp;correctas&nbsp;y&nbsp;si&nbsp;las&nbsp;columnas&nbsp;están&nbsp;vacías.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;df(DataFrame):&nbsp;dataframe&nbsp;con&nbsp;los&nbsp;datos&nbsp;de&nbsp;entrada.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;SystemExit:&nbsp;para&nbsp;la&nbsp;ejecución&nbsp;del&nbsp;script&nbsp;cuando&nbsp;ocurre&nbsp;un&nbsp;error&nbsp;de&nbsp;columna.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;df(DataFrame):&nbsp;dataframe&nbsp;con&nbsp;los&nbsp;datos&nbsp;de&nbsp;salida.</tt></dd></dl>
+
+<dl><dt><a name="finances-df_processing"><strong>df_processing</strong></a>(df)</dt><dd><tt>Procesado&nbsp;del&nbsp;dataframe:&nbsp;corrige&nbsp;errores&nbsp;y&nbsp;sustituye&nbsp;valor&nbsp;por&nbsp;cero&nbsp;si&nbsp;es&nbsp;incomprensible.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;df&nbsp;(dataframe):&nbsp;dataframe&nbsp;con&nbsp;los&nbsp;datos&nbsp;de&nbsp;entrada.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;df(DataFrame):&nbsp;dataframe&nbsp;con&nbsp;los&nbsp;datos&nbsp;de&nbsp;salida.</tt></dd></dl>
+
+<dl><dt><a name="finances-read_df"><strong>read_df</strong></a>(path)</dt><dd><tt>Lee&nbsp;el&nbsp;archivo&nbsp;.csv&nbsp;y&nbsp;lo&nbsp;pasa&nbsp;a&nbsp;DataFrame&nbsp;de&nbsp;Pandas.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;path&nbsp;(str):&nbsp;path&nbsp;del&nbsp;archivo<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;SystemExit:&nbsp;para&nbsp;la&nbsp;ejecución&nbsp;del&nbsp;script&nbsp;cuando&nbsp;ocurre&nbsp;un&nbsp;error&nbsp;de&nbsp;lectura.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;df(DataFrame):&nbsp;dataframe&nbsp;con&nbsp;los&nbsp;datos&nbsp;de&nbsp;salida.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
